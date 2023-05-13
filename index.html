@@ -1,15 +1,195 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Index page</title>
+	<title>Portfolio</title>
+
+	<style type="text/css">
+		* {
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+			font-family: system-ui;
+		}
+		nav {
+			height: 70px;
+			display: flex;
+			position: sticky;
+			z-index: 1;
+		}
+		.nav {
+			width: 800px;
+			margin: 0 auto;
+			display: flex;
+		}
+		.nav-logo {
+			margin: auto auto auto 0;
+			font-size: 25px;
+			text-transform: uppercase;
+			font-weight: 900;
+			letter-spacing: 5px;
+			color: #6495ed;
+		}
+		.nav-menu {
+			margin: auto 0;
+		}
+		.nav-menu-item {
+			margin: 0 10px;
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #6495ed;
+		}
+
+		#about-me {
+			width: 100%;
+			height: 600px;
+			background-color: #dfe1e5;
+			margin-top: -70px;
+			position: relative;
+			padding-top: 70px;
+		}
+		#about-me .img-wrapper {
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			border-radius: 50%;
+			right: 200px;
+			bottom: 130px;		
+			background-color: #dfe1e5;
+			box-shadow: 6px 81px 31px -64px #636363;
+		}
+		#about-me .img-wrapper img {
+			width: 100%;
+			border-radius: 50%;
+		}
+		#about-me .about-me-text {
+			position: absolute;
+			left: 270px;
+			bottom: 270px;
+			text-align: center;
+			transform: translateY(50%);
+		}
+		#about-me .about-me-text h1 {
+			text-transform: uppercase;
+			font-size: 22px;
+			font-weight: 700;
+			color: #636363;
+		}
+		#about-me .about-me-text p {
+			font-size: 16px;
+			color: #636363;
+			text-transform: uppercase;
+		}
+		#about-me .links {
+			margin-top: 15px;
+			display: flex;
+		}
+		#about-me .link {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: 2px solid #636363;
+			margin: 0 10px;
+		}
+
+		#cols {
+			width: 100%;
+			display: flex;
+		}
+		#cols>div {
+			margin: 50px 0;
+			color: #636363;
+			font-size: 20px;
+			width: 20%;
+			flex: 1;
+			display: flex;
+			padding: 20px 0;
+		}
+		#cols>div:nth-child(1) {
+			border-right: 1px solid #636363;
+		}
+		#cols>div:nth-child(2) {
+			border-right: 1px solid #636363;
+			border-left: 1px solid #636363;
+		}
+		#cols>div:nth-child(3) {
+			border-left: 1px solid #636363;
+		}
+		#cols>div>div {
+			margin: 0 auto;
+		}
+		#cols span {
+			color: #6495ed;
+			display: block;
+			font-size: 36px;
+			font-weight: 600;
+		}
+
+	</style>
+
 </head>
 <body>
 
-    Hello World
+	<nav>
+		<div class="nav">
+			<div class="nav-logo">
+				Lukas
+			</div>
+
+			<div class="nav-menu">
+				<a class="nav-menu-item" href="#about-me">About me</a>
+				<a class="nav-menu-item" href="#my-stack">My stack</a>
+				<a class="nav-menu-item" href="#my-stack">My projects</a>
+				<a class="nav-menu-item" href="#contact">Contact</a>
+			</div>
+		</div>
+	</nav>
+
+	<section id="about-me">
+		<div class="img-wrapper">
+			<img src="C:\Users\grofc\Desktop\lukas\test-me.png">
+		</div>
+		<div class="about-me-text">
+			<h1>Lukáš Grofčík</h2>
+			<p>Software developer</p>
+			<div class="links">
+				<div class="link">M</div>
+				<div class="link">L</div>
+				<div class="link">T</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="cols">
+		<div>
+			<div>
+				<span>3+</span> years of experience
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<span>12</span> projects
+			</div>
+		</div>
+
+		<div>
+			<div>
+				<span>1300+</span> commits
+			</div>
+		</div>
+	</section>
+
+	<section id="my-stack">
+		My stack contains some stack items.
+	</section>
+
+	<section id="my-projects">
+		My projects are stuff I worked on in the past.
+	</section>
+
+	<section id="contact">
+		You can contact me by my contacting options.
+	</section>
 
 </body>
 </html>
